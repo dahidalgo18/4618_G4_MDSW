@@ -37,7 +37,9 @@ void registrar() {
 	bool encontrado = false;
 
 	list_1.load_file("personas.txt");
-
+	cout<<"\n"<<"==============================================================================="<<"\n";
+	cout<<"\n"<<"                                     DATOS DEL TRABAJADOR                            "<<"\n";
+	cout<<"\n"<<"==============================================================================="<<"\n";
 	cout << "DATOS DEL Trabajador: " << endl;
 	cout << "Ingrese la cedula de la persona: " << endl;
 	cin >> ced;
@@ -112,7 +114,9 @@ void login() {
 	std::string user, password;
 	Options op;
 	int opcion = 0;
-
+	std::cout<<"\n"<<"==============================================================================="<<"\n";
+	std::cout<<"\n"<<"                                     BIENVENIDO                               "<<"\n";
+	std::cout<<"\n"<<"==============================================================================="<<"\n";
 	std::cout << "Ingrese su usuario: " << std::endl;
 	std::cin >> user;
 	std::cout << "Ingrese la contrasena: " << std::endl;
@@ -126,6 +130,11 @@ void login() {
 		strcpy(passwordA, fgets(texto, 100, fptr));
 		if (strcmp(userA, user.c_str()) == 0 && strcmp(passwordA, password.c_str()) == 0) {
 			do {
+				std::cout<<"\n"<<"==============================================================================="<<"\n";
+				std::cout<<"\n"<<"                                     GESTION DE EMPLEADOS                               "<<"\n";
+				std::cout<<"\n"<<"==============================================================================="<<"\n";
+				std::cout<<"\n"<<"1.Registrar Trabajador.\n";
+				std::cout<<"\n"<<"2.Mostrar Trabajador.\n";
 				opcion = op.menu(6, "Registrar Trabajador.", "Mostrar Trabajador.", "Mostrar .......", "Mostrar .....", "......", "Volver.");
 				switch (opcion)
 				{
@@ -154,6 +163,9 @@ void login() {
 			break;
 		}
 		else {
+			std::cout<<"==============================================================================="<<"\n";
+            std::cout<<"\n"<<"             ESTIMADO USUARIO LA OPCION MARCADA ES INVALIDA                    "<<"\n";
+            std::cout<<"\n"<<"==============================================================================="; 
 			std::cout << "Usuario/ password incorrectos!" << std::endl;
 			system("pause");
 		}

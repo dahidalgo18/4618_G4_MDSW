@@ -1,0 +1,4 @@
+Mateo Almis 002 Empleado 29 3000 2 
+Rodrigo Almis 891 Empleado 44 3000 10 
+Ernesto Almis 003 Empleado 29 8000 9 
+Mateo Almis 0010 Empleado 39 2300 4 
